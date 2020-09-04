@@ -1,6 +1,6 @@
 $(function () {
   $.ajax({
-    url: "http://localhost:3000/users",
+    url: "https://danhsachsinhvien.herokuapp.com/users",
   }).done(function (users) {
     let htmlString = "";
 
@@ -46,7 +46,7 @@ $(function () {
     $("#table-users").html(htmlString);
   });
 });
-const API_ROOT = 'http://localhost:3000/users';
+const API_ROOT = 'https://danhsachsinhvien.herokuapp.com/users';
 
 function getUsersAPI(renderFunction) {
   $.ajax({
